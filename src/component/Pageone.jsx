@@ -4,21 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 import imagepage from "../assets/img/image_page.png";
 
 function Pageone() {
-    const handleDownload = async () => {
-        const response = await fetch("http://localhost:5173/download-zip", {
-          method: "GET",
-        });
-    
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-    
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "coba.zip";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      };
     return(
         <div id="Pageone">
             <div className="text-center py-10">
@@ -39,7 +24,7 @@ function Pageone() {
                 <p className="md:font-medium font-normal md:w-7/12 w-9/12 mx-auto text-green-900 pt-8">Smooets Slider is an easy-to-use slider plugin for WordPress, 
                     allowing you to create stunning image sliders that grab the attention of your site visitors. With this Smooth Slider, 
                     you can easily display images and other content in a responsive and customizable slider.</p>
-                <button onClick={handleDownload} className="mt-8 bg-green-500 p-3 rounded-full font-semibold text-white
+                <button className="mt-8 bg-green-500 p-3 rounded-full font-semibold text-white
                 hover:scale-105 transition duration-300 hover:rotate-1">Downdload Zip File</button>
             </div>
             <div>
