@@ -4,6 +4,21 @@ import { TypeAnimation } from "react-type-animation";
 import imagepage from "../assets/img/image_page.png";
 
 function Pageone() {
+    const handleDownload = async () => {
+        const response = await fetch("http://localhost:5173/download-zip", {
+          method: "GET",
+        });
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "coba.zip";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
     return(
         <div id="Pageone">
             <div className="text-center py-10">
