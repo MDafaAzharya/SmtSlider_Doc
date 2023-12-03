@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
 import "../assets/css/navbar.css";
-import Pageone from "./Pageone";
+import Pageone from "./pageOne";
 import Pagetwo from "./Pagetwo";
 import Pagethree from "./PageThree";
 
