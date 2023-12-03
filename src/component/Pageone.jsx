@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import imagepage from "../assets/img/image_page.png";
 import smtslider from "../assets/smtSlider.zip"
 
-function pageOne() {    
+function Pageone() {    
     return (
         <div id="Pageone">
             <div className="text-center py-10">
