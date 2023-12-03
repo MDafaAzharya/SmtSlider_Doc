@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/pageone.css";
 import { TypeAnimation } from "react-type-animation";
 import imagepage from "../assets/img/image_page.png";
-import smtslider from "../assets/smtSlider.zip"
+
 
 function Pageone() {    
     return (
@@ -26,7 +26,6 @@ function Pageone() {
                     memungkinkan Anda membuat slider gambar yang menarik perhatian pengunjung situs Anda. Dengan Slider yang Mulus ini, 
                     Anda dapat dengan mudah menampilkan gambar dan konten lain dalam slider yang responsif dan dapat disesuaikan.</p>
                 <a
-        href={smtslider}
         download="Smt-Slider"
         target="_blank"
         rel="noreferrer"
